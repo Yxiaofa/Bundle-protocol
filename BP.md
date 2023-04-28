@@ -8,11 +8,11 @@ BP协议最基本的数据格式是束（Bundle）
 
 - 主数据块中包含了生存时间、时间戳和目的节点ID等基本信息
 
-<img src="C:\Users\15616\AppData\Roaming\Typora\typora-user-images\image-20221116205728815.png" alt="image-20221116205728815" style="zoom:50%;" />
+<img width="236" alt="image" src="https://user-images.githubusercontent.com/98028423/235211385-25730417-64ac-4792-a1e9-f4f37ed0ee67.png">
 
 1. 7表示bundle协议的bpv7版本，6表示bundle协议的bpv6版本
-2. <img src="C:\Users\15616\AppData\Roaming\Typora\typora-user-images\image-20221116205858278.png" alt="image-20221116205858278" style="zoom:50%;" />
-3. <img src="C:\Users\15616\AppData\Roaming\Typora\typora-user-images\image-20221116205917126.png" alt="image-20221116205917126" style="zoom:50%;" />
+2. <img width="301" alt="image" src="https://user-images.githubusercontent.com/98028423/235211442-a8f42f77-5f23-4830-965d-4e81f1a07caf.png">
+3. <img width="302" alt="image" src="https://user-images.githubusercontent.com/98028423/235211479-d902bd4f-90b6-4541-9d1e-fa9d0c6bc866.png">
 
 - 载荷数据块包含了数据块长度、数据块控制标志位和有效载荷等信息。
 
@@ -21,7 +21,7 @@ BP协议包含了两种重要机制：存储转发和托管传输
 - 托管传输是可选机制。存储转发主要是为了克服链路频繁中断的情况，当检测到链路发生中断或者未找到目的节点时，节点会将束暂存在本地缓存中而不是将其丢弃，当链路连接回复时将继续发送数据。
 - 托管传输机制需要节点具有永久存储空间，可以提高数据在极限条件下成功交付的可能性。
 
-![image-20221116205539506](C:\Users\15616\AppData\Roaming\Typora\typora-user-images\image-20221116205539506.png)
+<img width="423" alt="image" src="https://user-images.githubusercontent.com/98028423/235211534-e14f88fe-6534-4b19-9585-aa1b7826571b.png">
 
 
 
