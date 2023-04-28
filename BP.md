@@ -134,11 +134,11 @@ a plan <Number of Node> udp/*,<Destination IP Address>:<Destination Port>
 
 ## Test
 
-- bpcancel bp协议取消程序   bpcancel <source EID> <creation seconds> <creation count> <fragment offset> <fragment length>
-- bpchat bp聊天测试程序 bpchat.c <source EID> <dest EID>发送文本
+- bpcancel bp协议取消程序   bpcancel source EID creation seconds creation count fragment offset fragment length
+- bpchat bp聊天测试程序 bpchat source EID dest EID  发送文本
 - bpclock 守护进程
-- bpcounter 接收测试程序 bpcounter <own endpoint ID>
-- bpdriver 传输测试程序 bpdriver <number of cycles> <own endpoint ID> <destination endpoint ID> [<payload size>] [t<Bundle TTL>]
+- bpcounter 接收测试程序 bpcounter own endpoint ID
+- bpdriver 传输测试程序 bpdriver number of cycles own endpoint ID destination endpoint ID [payload size] [Bundle TTL]
 - bpecho 接收测试程序 bpecho ownEndpointId 每相应接收，发回长度为2的“echo”数据单元
 - bplist 列出排队的dundle
 - bpsendfile bprecvfile 文件传输程序
